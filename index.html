@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>softclaw.ai — Launch New Products with Agentic AI</title>
+<meta name="description" content="Launch new products with Agentic AI: on-brand, full-funnel, built to convert. Generate studio-quality images, optimize product descriptions, and increase sales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --accent: #D9480F; --ink: #1A1712; --cream: #F7F3EB; --card: #FFFDF8; --muted: #6E675C; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font-family: 'Space Grotesk', sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--accent); }
+  h1, h2, .serif { font-family: 'Instrument Serif', serif; font-weight: 400; letter-spacing: -0.01em; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 48px; }
+  nav { position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px 48px; background: rgba(247,243,235,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(26,23,18,0.08); }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; letter-spacing: -0.02em; }
+  .logo .ai, .accent { color: var(--accent); }
+  .navlinks { display: flex; align-items: center; gap: 28px; font-size: 15px; font-weight: 500; }
+  .btn { display: inline-block; font-size: 17px; font-weight: 600; padding: 16px 34px; border-radius: 999px; transition: background 0.15s, color 0.15s; }
+  .btn-fill { background: var(--accent); color: var(--card); }
+  .btn-fill:hover { background: var(--ink); color: var(--card); }
+  .btn-line { border: 1.5px solid var(--ink); }
+  .btn-line:hover { background: var(--ink); color: var(--cream); }
+  .btn-nav { font-size: 15px; padding: 11px 22px; background: var(--ink); color: var(--cream); }
+  .btn-nav:hover { background: var(--accent); color: var(--card); }
+  header { text-align: center; padding: 88px 48px 40px; }
+  .eyebrow { display: inline-block; white-space: nowrap; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; color: var(--accent); border: 1px solid rgba(217,72,15,0.35); border-radius: 999px; padding: 8px 18px; }
+  h1 { font-size: clamp(48px, 7vw, 84px); line-height: 1.02; margin: 32px 0 24px; text-wrap: balance; }
+  .sub { font-size: 22px; color: var(--muted); margin: 0 0 40px; }
+  .cta-row { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+  .fineprint { font-size: 14px; color: var(--muted); margin-top: 20px; }
+  .ticker { overflow: hidden; border-top: 1px solid rgba(26,23,18,0.1); border-bottom: 1px solid rgba(26,23,18,0.1); padding: 16px 0; margin-bottom: 56px; }
+  .ticker-track { display: flex; width: max-content; animation: marquee 28s linear infinite; }
+  .ticker-group { display: flex; gap: 56px; padding-right: 56px; font-size: 15px; font-weight: 600; letter-spacing: 0.22em; color: var(--muted); white-space: nowrap; }
+  .ticker-group .accent { color: var(--accent); }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .collage { max-width: 1160px; margin: 0 auto 96px; padding: 0 48px; display: grid; grid-template-columns: 1.4fr 1fr 1fr; grid-template-rows: 272px 272px; gap: 16px; }
+  .tile { position: relative; border-radius: 20px; overflow: hidden; }
+  .tile.tall { grid-row: span 2; box-shadow: 0 30px 60px -30px rgba(26,23,18,0.35); }
+  .tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .tile span { position: absolute; left: 16px; bottom: 16px; background: rgba(26,23,18,0.75); color: var(--cream); font-size: 12px; font-weight: 600; letter-spacing: 0.14em; padding: 8px 14px; border-radius: 999px; }
+  .logobar { max-width: 1100px; margin: 0 auto 112px; padding: 0 48px; text-align: center; }
+  .logobar p { font-size: 14px; font-weight: 600; letter-spacing: 0.12em; color: var(--muted); margin: 0 0 28px; }
+  .logobar-row { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 24px 56px; }
+  .logobar-row img { height: 34px; width: auto; opacity: 0.75; filter: grayscale(1); }
+  .dark { background: var(--ink); color: var(--cream); padding: 96px 48px; }
+  .kicker { font-size: 13px; font-weight: 600; letter-spacing: 0.14em; color: var(--accent); margin: 0 0 16px; }
+  h2 { font-size: clamp(36px, 4.5vw, 52px); margin: 0 0 56px; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
+  .stat { border-top: 1px solid rgba(247,243,235,0.2); padding-top: 28px; }
+  .stat .num { font-family: 'Instrument Serif', serif; font-size: 88px; line-height: 1; color: var(--accent); }
+  .stat p { font-size: 17px; color: rgba(247,243,235,0.75); margin: 18px 0 0; line-height: 1.55; }
+  .testimonials { padding: 112px 48px; }
+  .quote-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .quote-grid figure { margin: 0; background: var(--card); border: 1px solid rgba(26,23,18,0.1); border-radius: 20px; padding: 40px; display: flex; flex-direction: column; gap: 24px; }
+  .quote-grid blockquote { margin: 0; font-family: 'Instrument Serif', serif; font-size: 26px; line-height: 1.35; text-wrap: pretty; }
+  .quote-grid figcaption { font-size: 14px; font-weight: 600; letter-spacing: 0.1em; color: var(--muted); }
+  .book { max-width: 1200px; margin: 0 auto 112px; padding: 0 48px; }
+  .book-inner { background: var(--accent); color: var(--card); border-radius: 28px; padding: 72px 64px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: center; }
+  .book-inner .kicker { color: rgba(255,253,248,0.8); }
+  .book-inner h2 { margin-bottom: 20px; }
+  .book-inner p.body { font-size: 18px; line-height: 1.6; margin: 0; color: rgba(255,253,248,0.9); text-wrap: pretty; }
+  .book-cta { display: flex; justify-content: flex-end; }
+  .btn-white { background: var(--card); color: var(--ink); padding: 18px 40px; }
+  .btn-white:hover { background: var(--ink); color: var(--card); }
+  .faq { max-width: 860px; margin: 0 auto; padding: 0 48px 112px; }
+  .faq .kicker, .faq h2 { text-align: center; }
+  .faq h2 { margin-bottom: 16px; }
+  .faq .lede { font-size: 17px; color: var(--muted); text-align: center; margin: 0 0 48px; }
+  .faq-list { display: flex; flex-direction: column; gap: 14px; }
+  details { background: var(--card); border: 1px solid rgba(26,23,18,0.1); border-radius: 16px; padding: 24px 28px; }
+  summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; cursor: pointer; font-size: 18px; font-weight: 600; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: '+'; font-size: 24px; color: var(--accent); font-weight: 400; }
+  details[open] summary::after { content: '–'; }
+  details p { margin: 16px 0 0; font-size: 16px; line-height: 1.65; color: var(--muted); }
+  .final { max-width: 900px; margin: 0 auto; padding: 0 48px 128px; text-align: center; }
+  .final h2 { font-size: clamp(40px, 5vw, 60px); line-height: 1.08; margin-bottom: 20px; text-wrap: balance; }
+  .final .lede { font-size: 18px; color: var(--muted); margin: 0 0 40px; text-wrap: pretty; }
+  footer { background: var(--ink); color: var(--cream); padding: 72px 48px 40px; }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 48px; padding-bottom: 56px; border-bottom: 1px solid rgba(247,243,235,0.15); }
+  .foot-grid h3 { font-size: 14px; letter-spacing: 0.12em; color: rgba(247,243,235,0.5); margin: 0 0 18px; font-weight: 600; }
+  .foot-col { display: flex; flex-direction: column; gap: 12px; font-size: 15px; }
+  .foot-col a, .socials a { color: rgba(247,243,235,0.85); }
+  .foot-tag { font-size: 15px; color: rgba(247,243,235,0.65); line-height: 1.6; margin: 0 0 20px; max-width: 320px; }
+  .socials { display: flex; gap: 18px; font-size: 14px; font-weight: 600; }
+  .foot-base { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-top: 28px; font-size: 14px; color: rgba(247,243,235,0.55); flex-wrap: wrap; }
+  .foot-base a { color: rgba(247,243,235,0.7); }
+  @media (max-width: 900px) {
+    nav { padding: 14px 20px; } .navlinks { display: none; }
+    .wrap, header, .collage, .logobar, .book, .faq, .final { padding-left: 20px; padding-right: 20px; }
+    .collage { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, 220px); }
+    .tile.tall { grid-row: span 1; grid-column: span 2; }
+    .stats, .quote-grid, .book-inner, .foot-grid { grid-template-columns: 1fr; }
+    .book-cta { justify-content: flex-start; }
+    .dark, .testimonials { padding-left: 20px; padding-right: 20px; }
+  }
+</style>
+</head>
+<body id="top">
 
+<nav>
+  <a href="#top" class="logo">
+    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M4 22C4 14 7 6 10 3.5C11 6.5 10.5 12 9 16" stroke="#D9480F" stroke-width="2.6" stroke-linecap="round"/><path d="M11 21C11.5 15 14 8 17 5C17.5 8.5 16.5 13 15 17" stroke="#D9480F" stroke-width="2.6" stroke-linecap="round"/><path d="M17.5 21.5C18.5 17 20.5 12.5 23 10.5C23 14 21.5 18 19.5 21" stroke="#D9480F" stroke-width="2.6" stroke-linecap="round"/></svg>
+    <span>softclaw<span class="ai">.ai</span></span>
+  </a>
+  <div class="navlinks">
+    <a href="#ai-in-action">AI in Action</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#book-a-call">Book a Demo</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <a href="mailto:vidya@softclaw.ai" style="font-size:15px;font-weight:600;padding:10px 18px;">Log In</a>
+    <a href="mailto:vidya@softclaw.ai" class="btn btn-nav">Begin Now</a>
+  </div>
+</nav>
+
+<header>
+  <span class="eyebrow">AGENTIC AI FOR ECOMMERCE</span>
+  <h1>Launch New Products<br>with <em class="accent">Agentic AI</em></h1>
+  <p class="sub">On-Brand, Full-Funnel, Built to Convert.</p>
+  <div class="cta-row">
+    <a href="mailto:vidya@softclaw.ai" class="btn btn-fill">Start Free</a>
+    <a href="#book-a-call" class="btn btn-line">Book Demo</a>
+  </div>
+  <p class="fineprint">Instant setup, no credit card required.</p>
+</header>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <div class="ticker-group"><span>APPAREL</span><span class="accent">✦</span><span>FURNITURE</span><span class="accent">✦</span><span>PETS</span><span class="accent">✦</span><span>BEAUTY</span><span class="accent">✦</span><span>HOME</span><span class="accent">✦</span><span>FOOTWEAR</span><span class="accent">✦</span></div>
+    <div class="ticker-group"><span>APPAREL</span><span class="accent">✦</span><span>FURNITURE</span><span class="accent">✦</span><span>PETS</span><span class="accent">✦</span><span>BEAUTY</span><span class="accent">✦</span><span>HOME</span><span class="accent">✦</span><span>FOOTWEAR</span><span class="accent">✦</span></div>
+  </div>
+</div>
+
+<div class="collage">
+  <div class="tile tall"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80&auto=format&fit=crop" alt="Furniture lifestyle imagery generated by softclaw.ai"><span>FURNITURE</span></div>
+  <div class="tile"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&q=80&auto=format&fit=crop" alt="Apparel imagery generated by softclaw.ai"><span>APPAREL</span></div>
+  <div class="tile"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900&q=80&auto=format&fit=crop" alt="Pet product imagery generated by softclaw.ai"><span>PETS</span></div>
+  <div class="tile"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&q=80&auto=format&fit=crop" alt="Footwear imagery generated by softclaw.ai"><span>FOOTWEAR</span></div>
+  <div class="tile"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&q=80&auto=format&fit=crop" alt="Home goods imagery generated by softclaw.ai"><span>HOME</span></div>
+</div>
+
+<section class="logobar">
+  <p>SOFTCLAW.AI HAS OPTIMIZED CONTENT FOR THOUSANDS OF PRODUCTS FOR</p>
+  <div class="logobar-row">
+    <img src="https://www.softclaw.ai/images/bed-bath-beyond.png" alt="Bed Bath &amp; Beyond">
+    <img src="https://www.softclaw.ai/images/currey-and-company.png" alt="Currey &amp; Company">
+    <img src="https://www.softclaw.ai/images/love-dot-com.png" alt="Love.com">
+    <img src="https://www.softclaw.ai/images/seavees.png" alt="SeaVees">
+  </div>
+</section>
+
+<section id="ai-in-action" class="dark">
+  <div class="wrap" style="padding:0;">
+    <p class="kicker">AI IN ACTION</p>
+    <h2>Studio-quality content, minus the studio.</h2>
+    <div class="stats">
+      <div class="stat"><div class="num">2×</div><p>Up to 2 times higher conversion rates using softclaw.ai imagery.</p></div>
+      <div class="stat"><div class="num">15 min</div><p>Rapidly deploy full-funnel assets with our Agentic AI.</p></div>
+      <div class="stat"><div class="num">–99%</div><p>Drastically cut studio, technical, and editing costs.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="testimonials wrap">
+  <p class="kicker">TESTIMONIALS</p>
+  <h2>Real teams. Real-world results.</h2>
+  <div class="quote-grid">
+    <figure><blockquote>“Some of our slow-moving SKUs hadn't had new content in weeks. softclaw.ai gave us fresh images and copy, and we were able to clear out at least half of it.”</blockquote><figcaption>BED BATH &amp; BEYOND</figcaption></figure>
+    <figure><blockquote>“Our photo studio was backlogged and we never get enough lamp shots. softclaw.ai delivered — those images performed just as well as the ones our studio took.”</blockquote><figcaption>CURREY &amp; COMPANY</figcaption></figure>
+    <figure><blockquote>“We were hit with a ton of new arrivals and our team didn't have bandwidth to coordinate photos. softclaw.ai had our new SKUs ready to go with images within 24 hours.”</blockquote><figcaption>LOVE.COM</figcaption></figure>
+    <figure><blockquote>“Fresh content for our new shoe line performed better on PDP, and we used it on our socials too. Makes the process 10× easier, faster — and cheaper.”</blockquote><figcaption>SEAVEES</figcaption></figure>
+  </div>
+</section>
+
+<section id="book-a-call" class="book">
+  <div class="book-inner">
+    <div>
+      <p class="kicker">TALK TO OUR TEAM</p>
+      <h2>Go live within 24 hours</h2>
+      <p class="body">Schedule a demo and launch-planning session. We'll cover your catalog scale, brand guardrails, integrations, and a rollout plan. Most teams are live in 24 hours.</p>
+    </div>
+    <div class="book-cta"><a href="mailto:vidya@softclaw.ai" class="btn btn-white">Book a demo</a></div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <p class="kicker">FAQ</p>
+  <h2>Frequently Asked Questions</h2>
+  <p class="lede">Find answers to common questions about our platform.</p>
+  <div class="faq-list">
+    <details><summary>How is softclaw.ai different than competitors?</summary><p>softclaw.ai is agentic, end-to-end. Instead of one-off image tools, our AI plans and produces on-brand, full-funnel content — studio-quality imagery, optimized descriptions, and channel-ready assets — for your entire catalog automatically.</p></details>
+    <details><summary>Do I have to do everything or will softclaw.ai do it for me?</summary><p>softclaw.ai does the heavy lifting. Connect your catalog, set your brand guardrails once, and our agents generate, review, and stage content for approval — you stay in control with a single click to publish.</p></details>
+    <details><summary>How quickly will I see results?</summary><p>Most teams are live within 24 hours and see measurable conversion lift within 30 days. Fresh assets can be deployed to your first SKUs in about 15 minutes.</p></details>
+    <details><summary>What's included in the free tier?</summary><p>A free tail-SKU audit with projected uplift, plus a starter allowance of generated images and optimized descriptions. Instant setup, no credit card required.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <h2>Ready to 10× the value of your slow-moving SKUs?</h2>
+  <p class="lede">Get started in minutes with a free tail-SKU audit and see projected uplift before you pay a dime.</p>
+  <div class="cta-row">
+    <a href="mailto:vidya@softclaw.ai" class="btn btn-fill">Start Free</a>
+    <a href="#book-a-call" class="btn btn-line">Book Demo</a>
+  </div>
+  <p class="fineprint">Instant setup, no credit card required. See results in 30 days.</p>
+</section>
+
+<footer>
+  <div class="wrap" style="padding:0;">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="margin-bottom:16px;">
+          <svg width="24" height="24" viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M4 22C4 14 7 6 10 3.5C11 6.5 10.5 12 9 16" stroke="#D9480F" stroke-width="2.6" stroke-linecap="round"/><path d="M11 21C11.5 15 14 8 17 5C17.5 8.5 16.5 13 15 17" stroke="#D9480F" stroke-width="2.6" stroke-linecap="round"/><path d="M17.5 21.5C18.5 17 20.5 12.5 23 10.5C23 14 21.5 18 19.5 21" stroke="#D9480F" stroke-width="2.6" stroke-linecap="round"/></svg>
+          <span>softclaw<span class="ai">.ai</span></span>
+        </div>
+        <p class="foot-tag">Launch new products with Agentic AI. On-brand, full-funnel, built to convert.</p>
+        <div class="socials"><a href="#">LinkedIn</a><a href="#">Twitter</a><a href="#">Instagram</a></div>
+      </div>
+      <div><h3>PRODUCT</h3><div class="foot-col"><a href="#ai-in-action">AI in Action</a><a href="#testimonials">Testimonials</a></div></div>
+      <div><h3>RESOURCES</h3><div class="foot-col"><a href="#book-a-call">Book a Demo</a><a href="#faq">FAQ</a></div></div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 softclaw.ai. All rights reserved.</span>
+      <div style="display:flex;gap:24px;"><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
